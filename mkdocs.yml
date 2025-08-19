@@ -16,3 +16,4 @@ theme:
 nav:
   - Getting Started: index.md
   - Changelog: changelog.md
+  - FAQ: faq.md
