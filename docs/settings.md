@@ -1,6 +1,6 @@
 # Settings
 
-In Bloxbind 0.2.0 additional settings were added to enable more features and customization.
+In Bloxbind 1.1.0 additional settings were added to enable more features and customization.
 
 ## Options
 Currently two main setting groups exist: Auto Verification and Naming Scheme.
@@ -11,31 +11,20 @@ Currently two main setting groups exist: Auto Verification and Naming Scheme.
 
 ### Naming Scheme
 - The naming scheme currently supports a fixed set of options
-- Choose one of the following values:
-  - "RobloxUsername" - Sets the nickname to the users Roblox username. 
-  - "@RobloxUsername" - Sets the nickname to the users Roblox username with an @ symbol prefix. 
-  - "RobloxDisplay" - Sets the nickname to the users Roblox display name. 
-  - "@RobloxDisplay" - Sets the nickname to the users Roblox display name with an @ symbol prefix. 
-  - "DiscordUsername (RobloxUsername)" - Sets the nickname to the users discord username and includes the users roblox username.
-  - "DiscordUsername (RobloxDisplay)" - Sets the nickname to the users discord username and includes the users roblox display name.
-  - "None" - do not change the user's nickname
+  - Varibles: 
+      - {RobloxUsername}
+      - {RobloxDisplay}
+      - {DiscordUsername}
+  - Symbols:
+      - @
+      - \#
+      - ( )
+      - " "
+      - ' '
 
-#### Examples
-Given:
-```
-Roblox Username: BloxbindRBX
-Discord Username: BloxbindDC
-Roblox Display Name: BloxbindRBXDisplay
-```
+### Example
+![Naming Scheme Example](https://cdn.bocon.wtf/u/UYELwMxJ.png)
 
-- "RobloxUsername" -> BloxbindRBX
-- "@RobloxUsername" -> @BloxbindRBX
-- "RobloxDisplay" -> BloxbindRBXDisplay
-- "@RobloxDisplay" -> @BloxbindRBXDisplay
-- "DiscordUsername (RobloxUsername)" -> BloxbindDC (BloxbindRBX)
-- "DiscordUsername (RobloxDisplay)" -> BloxbindDC (BloxbindRBXDisplay)
-- "none" -> (no nickname change)
-
-#### Notes & limits
+### Notes & limits
 - Discord nickname max length: 32 characters. Long generated names may be truncated or rejected.
-- To change or view these settings use the `/settings` commands (examples: `/settings key:Auto Verification value:true`, `/settings key:Naming Scheme`).
+- To change or view these settings use the dashboard on our website.
